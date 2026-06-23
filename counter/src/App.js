@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react'
 function App() {
-  const [count,setCount]=useState(0)
+  const [counter,setCount]=useState(0)
   function Inc(){
   
       setCount((e)=>e+1)
@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <div className="App">
-      <p>count:{count}</p>
+      <p>count:{counter}</p>
      <button onClick={Inc}>Increment</button>
     </div>
   );
